@@ -1,4 +1,6 @@
-# изучаю git bash для себя, выписываю комманды
+my resume 
+https://spb.hh.ru/resume/427ea16fff084b3d2f0039ed1f5673746f7571
+
 - git commit
 
 - git status
@@ -72,3 +74,6 @@ collaborate (see also: git help workflows)
 concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
 See 'git help git' for an overview of the system.
+
+if file .git lock
+rm -f .git/index.lock
