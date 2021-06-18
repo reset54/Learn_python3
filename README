@@ -2,25 +2,26 @@
 - git commit
 
 - git status
-- git status -s 					#кратко
+- git status -s 					# кратко
 - git add fileName
-- echo TEXT >  fileName #перезапись text в fileName
+- git add .               # add files current dir
+- echo TEXT >  fileName   # rewrite text in fileName (old data - delete)
 
 - git config --system
-- git config --global core.editor "'C:\Program Files\Sublime Text 3\sublime_text.exe' 
+- git config --global core.editor "'C:\Program Files\Sublime Text 3\sublime_text.exe'       # change text editor for git bash
   -multiInst -notabbar -nosession -noPlugin"		#установка редактора текста по умолчанию
-- git config --global user.name ""			#установка имени пользователя внутри кавычек user_name
-- git congig --global init.defaultBranch main 		#установка имени для нашей ветки main
+- git config --global user.name ""			         
+- git congig --global init.defaultBranch main 		
 - git config --list
 - git config --list --show-origin
-- git config user.name 					#проверить имя по ключу user.name
+- git config user.name 		# check user name по ключу user.name
 
-- git add -h						#вывод краткой инструкции по использованию
+- git add -h						  # кратко help
 - git --help
 - git help <command>
 - git <command> --help
 
-- git diff						#просмотр изменений
+- git diff						    # wieving improuvements
 - git diff --staged
 - git diff --cashed
 

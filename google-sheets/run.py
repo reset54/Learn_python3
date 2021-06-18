@@ -28,7 +28,6 @@ values = service.spreadsheets().values().batchUpdate(
 		"data":[
 			{"range":"B3:C4",
 			"majorDimension":"ROWS",
-
 			}
 		]
 	}
