@@ -27,7 +27,6 @@ if 'u' not in found:
 print(found)
 
 
-
 print("\n")
 right_this_minute = []
 right_this_minute.append(5)

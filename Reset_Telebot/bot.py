@@ -13,7 +13,7 @@ def welcome(message):
     # keyboard
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1 = types.KeyboardButton("🎲 Рандомное число")
-    item2 = types.KeyboardButton("😊 Как дела-делишки?")
+    item2 = types.KeyboardButton("😊 How do you feel?")
     markup.add(item1, item2)
 
 
@@ -27,7 +27,7 @@ def lalala(message):
     if message.chat.type == 'private':
         if message.text == '🎲 Рандомное число':
             bot.send_message(message.chat.id, str(random.randint(0, 100)))
-        elif message.text == "😊 Как дела-делишки?":
+        elif message.text == "😊 How do you feel?":
 
             markup = types.InlineKeyboardMarkup(row_width=2)
             item1 = types.InlineKeyboardButton("Хорошо", callback_data='good')
@@ -35,9 +35,9 @@ def lalala(message):
 
             markup.add(item1, item2)
 
-            bot.send_message(message.chat.id, "Вообще огонь, а у тебя как?)", reply_markup=markup)
+            bot.send_message(message.chat.id, "Very good", reply_markup=markup)
         else:
-            bot.send_message(message.chat.id, "Воу, это круто! а я ещё пока не знаю других слов (((")
+            bot.send_message(message.chat.id, "It's cool! I don't know other woeds now (((")
 
 @bot.callback_query_handler(func=lambda call: True)
 def callback_inline(call):
@@ -54,7 +54,7 @@ def callback_inline(call):
 
             # show alert
             bot.answer_callback_query(callback_query_id=call.id, show_alert=True,
-                                      text="БЛИИИН, ОНО РАБОТАЕТ!!!")
+                                      text="Wow it works!!!")
 
     except Exception as e:
         print(repr(e))
