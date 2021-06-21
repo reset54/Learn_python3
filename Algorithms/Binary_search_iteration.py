@@ -24,8 +24,11 @@ def check_exist_element(list, item):
     else:
       return("Index of element isn't present in array")
 
+
 input_number = int(input())
 array_1 = [1, -6, 17, 29, 105, -30, 0 , -1000, 24, 220]
+print(f'Наш массив : {array_1}\nНаше вводимое число : {input_number}')
+
 array_sort = sorted(array_1)
 print(f"Array_sort : \n{array_sort}")
 print(check_exist_element(array_sort, input_number))
