@@ -4,6 +4,7 @@
 Дронов - Django
 Гарри Персиваль - "Python разработка на основе тестирования"
 
+GIT Bash
 - git commit
 
 - git status
@@ -13,7 +14,7 @@
 - echo TEXT >  fileName   # rewrite text in fileName (old data - delete)
 
 - git config --system
-- git config --global core.editor "'C:\Program Files\Sublime Text 3\sublime_text.exe'       # change text editor for git bash
+- git config --global core.editor "'C:\Program Files\Sublime Text 3\sublime_text.exe'       # change text editor for git bash in Win 10
   -multiInst -notabbar -nosession -noPlugin"		#установка редактора текста по умолчанию
 - git config --global user.name ""			         
 - git congig --global init.defaultBranch main 		
