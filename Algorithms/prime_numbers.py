@@ -1,5 +1,7 @@
 num = int(input())
 
+print("\nФункция \nis_prime_number - \n    проверка переданного числа на простоту;\nget_next_prime_number - \n    вернёт следующее простое число, большее, чем введённое \n    (независимо простое оно или нет)")
+
 def is_prime_number(number: int) -> bool:
     """Returns True, if `number` is prime, otherwise returns False"""
     check = 0
@@ -20,14 +22,15 @@ def get_next_prime_number(number: int) -> int:
     number += 1
     while(True):
         if(check == False):
-            #print(number)
+            # print(number)
             number += 1    
         else:
-            number += 1 
+            # number += 1 
             print("end cycle")
             break
     print(number)
 
-print(is_prime_number(num))
-print()
-get_next_prime_number(num)
+
+print(f"\nCheck on prime number = {is_prime_number(num)}")
+
+print(f"\nNext prime number = {get_next_prime_number(num)}")
