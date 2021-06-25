@@ -1,0 +1,28 @@
+https://regex101.com/
+https://docs.python.org/3.9/library/re.html
+
+
+Pattern	- Description
+^	        Start at the beginning of the string.
+\s*	      Match zero or more white-space characters.
+[\+-]?	  Match zero or one occurrence of either the positive sign or the negative sign.
+\s?	      Match zero or one white-space character.
+\$?	      Match zero or one occurrence of the dollar sign.
+\s?	      Match zero or one white-space character.
+\d*	      Match zero or more decimal digits.
+\.?	      Match zero or one decimal point symbol.
+\d{2}?	  Match two decimal digits zero or one time.
+(\d*\.?\d{2}?){1}	      
+          Match the pattern of integral and fractional digits separated by a decimal point symbol at least one time.
+$	        Match the end of the string.
+
+.         любой одиночный символ
+[]        найти любой символ в кавычках
+$         конец строки
+^         начало строки
+
+phone:
+"^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+
+email
+https://www.elma-bpm.ru/KB/article-6127.html
