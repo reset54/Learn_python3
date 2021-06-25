@@ -1,3 +1,7 @@
 our_input_string = input()
-for s in our_input_string[::-1]:
-    print(s, end='')
+def reverse_string(string):
+    for s in string[::-1]:
+        print(s, end='')
+
+# test
+reverse_string(our_input_string)
