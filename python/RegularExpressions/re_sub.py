@@ -1,4 +1,5 @@
 import re
+# print(help(re.sub))
 
 oldstring = "My name is David. Hi David."
 print (oldstring)
@@ -10,13 +11,5 @@ newstring = re.sub(
                 "Amy",                       
                 oldstring
 )
+print(f"{newstring} \n\n")
 
-print(f"newstring \n\n")
-
-print(help(re.sub))
-print("\n")
-# print(type(help()))
-
-# help(re.match)
-# print("\n")
-# help(re)
