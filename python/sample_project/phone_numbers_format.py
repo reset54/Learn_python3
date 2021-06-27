@@ -15,10 +15,8 @@ def phone_numbers_formatter(pn):
     if count ==  11 or count == 10 and pn[-10] == "9":
         return(f'8 ({pn[-10:-7]}) {pn[-7:-4]}-{pn[-4:-2]}-{pn[-2:-1]}{pn[-1]}')
     else:
-        try:
-            return(f'{pn[:-1]}{pn[-1]}')
-        except IndexError:
-            print("IndexError, please input correct number")
+        return(f'{pn[:-1]}{pn[-1]}')
+
 
 
 def testingcode(phone):
