@@ -22,8 +22,8 @@ class Circle:
         """Диаметр"""
         return 2 * self.radius
 
-#first_circle = Circle(radius=10)
-#second_circle = Circle(radius=30)
+# first_circle = Circle()
+# second_circle = Circle(radius=30)
 
-#print(first_circle.get_area())
-#print(second_circle.get_diameter()) 
+# print(first_circle.get_area())
+# print(second_circle.get_diameter())
