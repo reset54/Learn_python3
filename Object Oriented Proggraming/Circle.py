@@ -18,12 +18,12 @@ class Circle:
         """Длина (периметр)"""
         return (2 * math.pi * self.radius)
 
-    def get_diameter(self) -> float:
+    def get_diameter(self) -> int:
         """Диаметр"""
         return 2 * self.radius
 
-first_circle = Circle(radius=10)
-second_circle = Circle(radius=30)
+#first_circle = Circle(radius=10)
+#second_circle = Circle(radius=30)
 
-print(first_circle.get_area())
-print(second_circle.get_diameter()) 
+#print(first_circle.get_area())
+#print(second_circle.get_diameter()) 
