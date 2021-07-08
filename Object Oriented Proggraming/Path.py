@@ -15,7 +15,7 @@ class Path:
     
     @property
     def parent(self: str) -> str:
-        return Path(dirname(self.current))
+        pass
 
 p = Path('repositres/Algorithms/Binary_search_iteration.py')
 print(p.parent)
