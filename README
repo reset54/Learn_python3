@@ -6,3 +6,4 @@ git push -f  # (принудительное обновление)
 
 if file .git lock
 rm -f .git/index.lock
+git stash - сохранение изменений в ветках
