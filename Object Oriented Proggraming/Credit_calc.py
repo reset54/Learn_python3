@@ -2,6 +2,7 @@ class Calc_credit():
 
     def __init__(self, summ_credit: float, your_period: int, loan_rate: float):
         """
+        Данный код не закончен! This code is incomlete
         При инициализации для каждого Calc_credit(object) создадутся параметры:
         1. Cумма по кредиту (рублей)
         2. Необходимый период кредитования (лет)
