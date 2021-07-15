@@ -1,11 +1,12 @@
 import re
 
+
 pattern_1 = r"(\D+\d)"
 pattern_2 = r"(\W+\d)"
 pattern_3 = r"(\S+\s)"
 pattern_4 = r"(\D+\d)"
 
-def test(p):
+def test(p: str) -> None:
   print("\n      for " + p + "\n")
   match = re.match(p, "Hi 999!")
   if match:
@@ -24,6 +25,7 @@ def test(p):
     print("True,     ! $?")
   else:
     print("false, ' ! $?'")
+
 test(pattern_1)
 test(pattern_2) 
 test(pattern_3)
