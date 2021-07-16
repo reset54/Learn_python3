@@ -17,7 +17,7 @@ for i in range(len(string)):
     if now_count > ans_count: # check more meeting symbol
         ans = string[i]
         ans_count = now_count
-print(f"Option 1: {ans} for {string}")
+print(f"Option 1: '{ans}' for string '{string}'")
 
 # Option 2 (set O)
 # O(N*K) - Time
@@ -34,7 +34,7 @@ for now in set(string_2): # no identikal values in set
     if now_count > ans_count: # check more meeting symbol
         ans = now
         ans_count = now_count
-print(f"Option 2: {ans} for {string_2}")
+print(f"Option 2: '{ans}' for string '{string_2}'")
 
 # Option 3 (dict)
 # O(N) - Time
@@ -44,7 +44,7 @@ string_3 = "shgoioiwngv;ophvniewh vnoikkjeisdaf"# test
 ans = "" # type = str
 ans_count = 0 
 dct = {}
-for now in string_3: # no identikal values in set
+for now in string_3:
     if now not in dct:
         dct[now] = 0
     dct[now] += 1
@@ -53,4 +53,4 @@ for key in dct:
     if dct[key] > ans_count: # check more meeting symbol
         ans_count = dct[key]
         ans = key
-print(f"Option 3: {ans} for {string_3}")
+print(f"Option 3: '{ans}' for string '{string_3}'")
