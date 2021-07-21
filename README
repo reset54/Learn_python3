@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 my resume 
 https://spb.hh.ru/resume/427ea16fff084b3d2f0039ed1f5673746f7571
 
@@ -7,3 +8,14 @@ git push -f  # (принудительное обновление)
 if file .git lock
 rm -f .git/index.lock
 git stash - сохранение изменений в ветках
+=======
+my resume 
+https://spb.hh.ru/resume/427ea16fff084b3d2f0039ed1f5673746f7571
+
+git add -A && git commit -m "modified code" && git push branch_name
+git push -f  # (принудительное обновление)
+
+if file .git lock
+rm -f .git/index.lock
+git stash - сохранение изменений в ветках
+>>>>>>> refs/remotes/origin/readme

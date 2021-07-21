@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CI / CD pipelines:
     # С помощью pipelines слияние веток инициирует обновление содержимого удалённого сервера\площадки. Таким образом, если определённые ветки настроить на выгрузку то можно постоянно осуществлять выпуски версий проекта на выбранные серверы в автоматическом режиме.
 
@@ -67,4 +68,75 @@ Kubernetes:
   Service discovery and load balancing
       Kubernetes can expose a container using the DNS name or using their own IP address. If traffic to a container is high, Kubernetes is able to load balance and distribute the network traffic so that the deployment is stable.
       При запуске одного Docker Container, K8s даёт доступ к этому Docker Container через IP address, через определенный порт на любом Worker Node или через имя DNS. Также при запуске нескольких 
+=======
+CI / CD pipelines:
+    # С помощью pipelines слияние веток инициирует обновление содержимого удалённого сервера\площадки. Таким образом, если определённые ветки настроить на выгрузку то можно постоянно осуществлять выпуски версий проекта на выбранные серверы в автоматическом режиме.
+
+    CI continuous integration
+    
+    CD continuous delivery, continuous deployment
+
+    
+    GitFlow:
+        https://www.atlassian.com/ru/git/tutorials/comparing-workflows/gitflow-workflow
+
+    GitLab:
+
+    GitHub Actions:
+        https://www.youtube.com/watch?v=Yg5rpke79X4&list=PLg5SS_4L6LYstwxTEOU05E0URTHnbtA0l&index=14&ab_channel=ADV-ITADV-IT
+    Jenkins:
+        https://www.youtube.com/watch?v=cyb10iplv7U&list=PLg5SS_4L6LYvQbMrSuOjTL1HOiDhUE_5a&ab_channel=ADV-IT
+        https://habr.com/ru/company/ruvds/blog/522334/
+
+
+Clouds:
+    AWS - Amazon Web Servises:
+        https://www.youtube.com/watch?v=8jbx8O3wuLg&list=PLg5SS_4L6LYsxrZ_4xE_U95AtGsIB96k9&ab_channel=ADV-ITADV-IT
+
+        AWS Container Registry ECR
+
+    Azure - Microsoft:
+        Azure Container Registry
+
+    Google Cloud:
+        https://www.youtube.com/watch?v=5wEbNSrs098&list=PLg5SS_4L6LYs5IZZSY0viHRQFPa2P-R8H&ab_channel=ADV-ITADV-IT
+
+        Google Container Registry
+Docker:
+    docker file
+    docker image (push in Container Registry)
+    docker-container
+    DockerHub
+    отличие docker-контейнера от виртуальной машины в том, что для виртуальной машины размечается один раз пространство, а docker-container можно масштабировать.
+
+Kubernetes:
+    предназначен для контейнеризированных приложений
+    - автоматизация развёртывания приложений
+    - автоматизация масштабирования 
+    - автоматизация управления приложений
+    https://github.com/kubernetes/      # Open Source Project
+    https://habr.com/ru/post/258443/
+    https://www.youtube.com/watch?v=q_nj340pkQo&ab_channel=ADV-IT
+
+    K8s - Cluster
+    Nodes (servers)
+    1. Worker Node (сервер, на котором запускаются и работают контейнеры)
+    2. Master Node (сервер, который управляет Worker Nodes)
+    команды управления всегда запускаются на Master Node.
+    на Master работают 3 основных процесса:
+        - kube-apiserver (cloud)
+        - kube-controller-manager
+        - kube-scheduler
+    на Worker работают 2 основных процесса:
+        - kubelet
+        - kube-proxy
+
+    минимально K8s: 
+        - 1 Master Node
+        - 1 Worker node (или более, Node можно добавлять, расширяя количество серверов, масштабировать)
+
+  Service discovery and load balancing
+      Kubernetes can expose a container using the DNS name or using their own IP address. If traffic to a container is high, Kubernetes is able to load balance and distribute the network traffic so that the deployment is stable.
+      При запуске одного Docker Container, K8s даёт доступ к этому Docker Container через IP address, через определенный порт на любом Worker Node или через имя DNS. Также при запуске нескольких 
+>>>>>>> refs/remotes/origin/readme
   

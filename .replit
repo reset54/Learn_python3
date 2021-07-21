@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 language = "python3"
+=======
+language = "python3"
+>>>>>>> refs/remotes/origin/readme
 run = ""
