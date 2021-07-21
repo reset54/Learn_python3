@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # option search, when checking all elements
 print("\nАлгоритм линейный поиск, линейная сложность O(N)\nпоиск подходящего или наиболее подходящего элемента")
 
@@ -55,7 +54,7 @@ print(f"Max element \nmax index element in sequence = {find_max_index(array)}")
     
 #print(f"Максимальное количество элементов следующих друг за другом\nMaximum number of elements following each other in sequence = {find_max_index(array)}")
 
-=======
+
 # option search, when checking all elements
 print("\nАлгоритм линейный поиск, линейная сложность O(N)\nпоиск подходящего или наиболее подходящего элемента")
 
@@ -111,5 +110,3 @@ print(f"Max element \nmax index element in sequence = {find_max_index(array)}")
 #    return sequence[max_char]
     
 #print(f"Максимальное количество элементов следующих друг за другом\nMaximum number of elements following each other in sequence = {find_max_index(array)}")
-
->>>>>>> refs/remotes/origin/readme
