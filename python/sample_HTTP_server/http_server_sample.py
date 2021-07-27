@@ -24,3 +24,4 @@ response = f"HTTP/1.1 200 OK\nContent-Type: text/html; charset=utf-8\n\n"\
 client_socket.send(response.encode("utf-8"))
 client_socket.shutdown(socket.SHUT_RDWR)
 server.close()
+
