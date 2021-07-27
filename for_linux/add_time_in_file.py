@@ -2,7 +2,7 @@ import datetime
 import pytz
 
 timezone = pytz.timezone("Europe/Moscow")
-now = timezone.localize(datetime.datetime.utcnow())
+now = timezone.localize(datetime.datetime.now())
 
 # append row in file "now.txt"
 with open("./now.txt", "a") as f:
