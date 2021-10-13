@@ -49,3 +49,8 @@ def test_array(array: list):
     print(f"Последнее вхождение element {2} \nlast (right) index element in sequence = {find_right_index(array, 2)}")
     print(f"Max element \nmax index element in sequence = {find_max_index(array)}")
     # print(f"Максимальное количество элементов следующих друг за другом\nMaximum number of elements following each other in sequence = {find_max_index(array)}")
+    
+# run tests
+test_array(our_array)
+test_array(our_array_2)
+test_array(input())
