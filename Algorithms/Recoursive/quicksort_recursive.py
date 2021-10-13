@@ -12,7 +12,6 @@ def quicksort_recursive(array: list):
         greater = [i for i in array[1:] if i > pivot]
         result = quicksort_recursive(less) + [pivot] + quicksort_recursive(greater)
         return (result)
-        # print(result)
 
         
 def test_and_print(array: list) -> list:
