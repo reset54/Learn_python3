@@ -31,14 +31,14 @@ def factorial_generate(num: int) -> Generator[int, None, None]:
 
 # tests
 def test_steps_generate(gen):
-	i = 1
-	while(gen):
-		try:
-			print(f"Step generate {i} out: {next(gen)}")
-			i += 1
-		except StopIteration:
-			print("Итерации далее невозможны, iterable больше не содержит элементов\n\n")
-			break
+    i = 1
+    while(gen):
+        try:
+	    print(f"Step generate {i} out: {next(gen)}")
+	    i += 1
+	except StopIteration:
+	    print("Итерации далее невозможны, iterable больше не содержит элементов\n\n")
+	    break
 
 
 # run tests
