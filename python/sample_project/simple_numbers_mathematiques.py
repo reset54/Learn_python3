@@ -8,11 +8,10 @@ num = int(input())
 
 def is_prime_number(number: int) -> bool:
     """Returns True, if `number` is prime, otherwise returns False"""
-    if number % number == 0 and number % 1 == 0:
-        return (True)
-    else:
-        return (False)
-
+    if number == 1: 
+        return False
+    x = all(number % i for i in range(2, number))
+    return x
 
 def get_next_prime_number(number: int) -> int:
     """Returns next primer number after `number`"""
@@ -23,7 +22,7 @@ def get_next_prime_number(number: int) -> int:
         k = 0                       # 
         for j in array:
             if i % j == 0:
-                k = 1
+                k = 1+-
             if k == 0:
                 array.append(i)
     if is_prime_number(number) in array:
