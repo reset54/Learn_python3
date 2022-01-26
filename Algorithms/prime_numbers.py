@@ -1,7 +1,5 @@
 import unittest
 
-num = int(input())
-
 
 def is_prime_number(number: int) -> bool:
     """Returns True, if `number` is prime, otherwise returns False
@@ -43,22 +41,30 @@ def get_next_prime_number(number: int) -> int:
 
 
 class Test_is_prime_number(unittest.TestCase):                      # extends from unittest.TestCase
-    
     def test_is_prime_number(self): 
         self.assertEqual(is_prime_number(30), False)
         self.assertEqual(is_prime_number(77), False)
         self.assertEqual(is_prime_number(7), "True")
+        try:
+            self.assertEqual(is_prime_number(7), False)
+        except AssertionError:
+            print(f'тест на self.assertEqual(is_prime_number(7), False) - не прошел')
+
 
     def test_get_next_prime_number(self):
-        print(self.assertEqual(get_next_prime_number(30), 31))
+        self.assertEqual(get_next_prime_number(30), 31)
         self.assertEqual(get_next_prime_number(77), 79)
         self.assertEqual(get_next_prime_number(7), 11)
         self.assertEqual(get_next_prime_number(11), 13)
         self.assertEqual(get_next_prime_number(115), 127)
-        self.assertEqual(get_next_prime_number(1975), 1979) 
+        try:
+            self.assertEqual(get_next_prime_number(1917), 1979) 
+        except AssertionError:
+            print(f'тест на self.assertEqual(get_next_prime_number(1917), 1979) - не прошел')
 
 if __name__ == '__main__':
+    num = int(input("пожалуйста введите число, которое хотите проверить на простоту: "))
+    print(f"\nCheck on prime number = {is_prime_number(num)}")
+    print(f"\nNext prime number = {get_next_prime_number(num)}")
     unittest.main()
 
-print(f"\nCheck on prime number = {is_prime_number(num)}")
-print(f"\nNext prime number = {get_next_prime_number(num)}")

@@ -2,13 +2,9 @@
 # Алгоритм линейный поиск, линейная сложность O(N) поиск подходящего или наиболее подходящего элемента
 
 
-our_array = [1, 2, 1, 3, 3, 7, 10, 12, 2, 4]
-our_array_2 = "aabbbccccddeeeeeeeffffggggggggghhhhhhhhhjj"
-
-
 def find_left_index(sequence: list, element) -> int:
     ans = -1 
-    for i in range(len(sequence)):                  # enumerate
+    for i in range(len(sequence)):                  
         if ans == -1 and sequence[i] == element:    # check
             ans = i
     return(f"Option 1: {ans}")
@@ -16,13 +12,13 @@ def find_left_index(sequence: list, element) -> int:
 
 def find_right_index(sequence: list, element) -> int:
     ans = -1 
-    for i in range(len(sequence)):                  # enumerate
+    for i in range(len(sequence)):                  
         if sequence[i] == element:                  # check
             ans = i
     return(f"Option 2: {ans}")
 
 
-def find_max_index(sequence: list) -> int, int:
+def find_max_index(sequence: list) -> int:
     max = sequence[0]
     index_max = 0
     for i in range(len(sequence)):
@@ -51,6 +47,9 @@ def test_array(array: list):
     # print(f"Максимальное количество элементов следующих друг за другом\nMaximum number of elements following each other in sequence = {find_max_index(array)}")
     
 # run tests
+our_array = [1, 2, 1, 3, 3, 7, 10, 12, 2, 4]
+our_array_2 = "aabbbccccddeeeeeeeffffggggggggghhhhhhhhhjj"
+
 test_array(our_array)
 test_array(our_array_2)
 test_array(input())
