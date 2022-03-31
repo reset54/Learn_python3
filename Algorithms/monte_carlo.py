@@ -2,7 +2,7 @@ import random
 
 
 """
-для примера дана система уравнений:
+for example has system equations:
 -2 <= x <= 2
 -2 <= y <= 2
 x**3 + y**4 + 2 >= 0
