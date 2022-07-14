@@ -1,5 +1,5 @@
 my resume 
 https://spb.hh.ru/resume/427ea16fff084b3d2f0039ed1f5673746f7571
 
-### add username in sudoers file (on linux)
+# add username in sudoers file (on linux)
 sudo usermod -a -G sudo <username>
